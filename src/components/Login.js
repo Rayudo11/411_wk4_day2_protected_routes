@@ -20,10 +20,11 @@ class App extends Component {
 
   login = (e) => {
     e.preventDefault()
+
     // set cookie here
     // set loggedIn = true and max-age = 60*1000 (one minute)
-
-    window.location.replace("/")
+    document.cookie = "loggedIn=true;max-age=0"
+    
   }
 
   render() {
